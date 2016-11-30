@@ -1,0 +1,12 @@
+---
+# defaults file for openvpn
+
+openvpn_dns1: 8.8.8.8
+openvpn_dns2: 8.8.4.4
+openvpn_server_name: server
+
+# Certificates vars
+openvpn_ca: ""
+openvpn_server_key: ""
+openvpn_server_crt: ""
+openvpn_dh2048: ""
