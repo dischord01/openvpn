@@ -12,14 +12,14 @@
 #  Easy RSA
 #--------------------------------------------
 - name: Make a easy-rsa folder in openvpn
-  file: /etc/openvpn/easy-rsa
+  file: path="/etc/openvpn/easy-rsa" state=directory
 
 - name: Make a easy-rsa folder in openvpn
-  file: /etc/openvpn/easy-rsa/keys
+  file: path="/etc/openvpn/easy-rsa/keys" state=directory
 
 - name: Copy over easy-rsa files
   copy: 
-    src: {{ item }}
+    src: "{{ item }}"
     dest: /etc/openvpn/easy-rsa/
     owner: root
     mode: 600
